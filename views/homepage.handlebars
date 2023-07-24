@@ -1,0 +1,18 @@
+<section class="recipes">
+  {{#if loggedIn}}
+    {{!-- <button id="logout" class="btn-no-style">Logout</button> --}}
+    {{#each recipes}}
+    <div class="recipe">
+      <h2 class="recipe-title">{{title}}</h2>
+      <p class="recipe-ingredients">{{ingredients}}</p>
+      <p class="recipe-instructions">{{instructions}}</p>
+      {{!-- <p class="recipe-author">By {{User.username}}</p> --}}
+    </div>
+    {{/each}}
+  {{else}}
+    <a href="/login" id="my-link-id" class="button">Login or Signup its free!</a>
+    <p>This is a recipe blog website where you may read recipes that have been tried and tested by our small community of food enthusiasts.</p>
+    <p>Please login to show all recipe details</p>
+  {{/if}}
+
+</section>

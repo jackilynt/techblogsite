@@ -1,0 +1,10 @@
+[
+    {
+        "username": "kj",
+        "email": "kj@gmail.com",
+        "password": "123",
+        "recipe_id": [
+            1
+        ]
+    }
+]
